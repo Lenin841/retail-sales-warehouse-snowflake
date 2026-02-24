@@ -1,11 +1,23 @@
-# Retail Sales Warehouse
+# Retail Sales Intelligence Warehouse (Snowflake)
 
-This repository contains SQL transforms and documentation for the Retail Sales Warehouse project.
+## Overview
+End-to-end SQL Data Warehouse project using Snowflake and TPCDS dataset.
 
-Structure:
+## Architecture
+Bronze → Silver → Gold layered design
 
-- `architecture/` - architecture diagrams (Mermaid).
-- `sql/` - ETL SQL scripts (bronze → silver → gold, SCD, incremental, optimization).
-- `docs/` - additional documentation (data model).
+## Features
+- SCD Type 2 implementation
+- Incremental loading
+- Fact pre-aggregation
+- Query optimization using partition pruning
+- Query profiling
 
-Use these files as templates to populate your ETL pipeline.
+## Tech Stack
+- Snowflake
+- SQL
+- Mermaid (Architecture diagrams)
+- Git & GitHub
+
+## Project Structure
+See `/sql` for implementation scripts.
