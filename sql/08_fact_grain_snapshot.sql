@@ -1,0 +1,10 @@
+use warehouse compute_wh;
+
+use database SNOWFLAKE_LEARNING_DB;
+
+CREATE OR REPLACE TABLE GOLD.MONTHLY_SALES AS
+SELECT
+    DATE_TRUNC('month', transaction_date) AS sales_month,
+    SUM(sales_price) AS total_sales           
+FROM SILVER.FACT_SALES 
+GROUP BY SALES_MONTH;
