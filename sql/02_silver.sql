@@ -24,6 +24,7 @@ AND ss.ss_sales_price IS NOT NULL
 AND ss.ss_quantity > 0;
 DESC TABLE SILVER.STORE_SALES_CLEAN;
 
+SELECT * FROM BRONZE.STORE_SALES_RAW;
 SELECT MIN(ss_sales_price), MAX(ss_sales_price)
 FROM SILVER.STORE_SALES_CLEAN;
 
